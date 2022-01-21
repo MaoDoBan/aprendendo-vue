@@ -6,6 +6,11 @@ const app = Vue.createApp({
       autor: "Aquele Cara",
       idade: 44
     };
+  },
+  methods: {
+    alteraTitulo(){
+      this.titulo = "A ida dos que não voltaram";
+    }
   }
 });
 
