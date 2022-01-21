@@ -16,6 +16,9 @@
       Autor: {{ autor }}<br>
       Idade: {{ idade }}
     </h3>
+
+    <button v-on:click="idade++">Aumentar idade</button>
+    <button @click="idade--">Diminuir idade</button>
   </div>
 
   <script src="app.js"></script>
