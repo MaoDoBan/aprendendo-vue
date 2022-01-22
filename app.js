@@ -8,8 +8,8 @@ const app = Vue.createApp({
     };
   },
   methods: {
-    alteraTitulo(){
-      this.titulo = "A ida dos que não voltaram";
+    alteraTitulo(parâmetro){
+      this.titulo = parâmetro;//"A ida dos que não voltaram";
     }
   }
 });
