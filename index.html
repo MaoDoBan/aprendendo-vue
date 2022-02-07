@@ -10,7 +10,7 @@
   <h1>Bah, vamos aprender Vue né</h1>
 
   <div id="div-bah">
-    <h2>Livros:</h2>
+    <h2 v-if="mostrarLivros">Livros:</h2>
     <h3>
       Título: {{ titulo }}<br>
       Autor: {{ autor }}<br>
@@ -21,6 +21,12 @@
     <button @click="idade--">Diminuir idade</button>
     <br>
     <button @click="alteraTitulo('Não volte a retornar')">Troca o título</button>
+
+    <br><br>
+    <button @click="trocarVerLivros">
+      <spam v-if="mostrarLivros">Esconder "Livros"</spam>
+      <spam v-else>Mostrar "Livros"</spam>
+    </button>
   </div>
 
   <script src="app.js"></script>
